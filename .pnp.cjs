@@ -32,7 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@claeusdev-afro/foundation", ["workspace:packages/foundation"]],\
-      ["@claeusdev-afro/react", ["workspace:packages/react"]],\
+      ["@claeusdev-afro/react", ["virtual:01f6007a955881bab4548f970e78adb26e1d4f765172be25aa746a5190297b112ebd1a0377b1629e5ce2a6afca05a11d43108f072d3cab67ac6fd2872651419f#workspace:packages/react", "workspace:packages/react"]],\
       ["@claeusdev-afro/storybook", ["workspace:packages/storybook"]],\
       ["afro", ["workspace:."]]\
     ],\
@@ -73,11 +73,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@claeusdev-afro/react", [\
+        ["virtual:01f6007a955881bab4548f970e78adb26e1d4f765172be25aa746a5190297b112ebd1a0377b1629e5ce2a6afca05a11d43108f072d3cab67ac6fd2872651419f#workspace:packages/react", {\
+          "packageLocation": "./.yarn/__virtual__/@claeusdev-afro-react-virtual-72cbe09f54/1/packages/react/",\
+          "packageDependencies": [\
+            ["@claeusdev-afro/react", "virtual:01f6007a955881bab4548f970e78adb26e1d4f765172be25aa746a5190297b112ebd1a0377b1629e5ce2a6afca05a11d43108f072d3cab67ac6fd2872651419f#workspace:packages/react"],\
+            ["@claeusdev-afro/foundation", "workspace:packages/foundation"],\
+            ["@types/react", "npm:18.2.21"],\
+            ["@types/react-dom", "npm:18.2.7"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:bb8a751f080187dfe6ed0e1efbbcfa8703ca57bdbec249b81dd84553bf3fdbdb2218c135e0075c417997cedaa6a781d80ddf0d774f8585e1925c1f86bf92b9c6#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["workspace:packages/react", {\
           "packageLocation": "./packages/react/",\
           "packageDependencies": [\
             ["@claeusdev-afro/react", "workspace:packages/react"],\
             ["@claeusdev-afro/foundation", "workspace:packages/foundation"],\
+            ["@types/react", "npm:18.2.21"],\
+            ["@types/react-dom", "npm:18.2.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:bb8a751f080187dfe6ed0e1efbbcfa8703ca57bdbec249b81dd84553bf3fdbdb2218c135e0075c417997cedaa6a781d80ddf0d774f8585e1925c1f86bf92b9c6#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
@@ -91,7 +106,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@claeusdev-afro/storybook", "workspace:packages/storybook"],\
             ["@claeusdev-afro/foundation", "workspace:packages/foundation"],\
-            ["@claeusdev-afro/react", "workspace:packages/react"],\
+            ["@claeusdev-afro/react", "virtual:01f6007a955881bab4548f970e78adb26e1d4f765172be25aa746a5190297b112ebd1a0377b1629e5ce2a6afca05a11d43108f072d3cab67ac6fd2872651419f#workspace:packages/react"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -213,6 +228,46 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nodelib/fs.walk", "npm:1.2.8"],\
             ["@nodelib/fs.scandir", "npm:2.1.5"],\
             ["fastq", "npm:1.15.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/prop-types", [\
+        ["npm:15.7.5", {\
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
+          "packageDependencies": [\
+            ["@types/prop-types", "npm:15.7.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react", [\
+        ["npm:18.2.21", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.21-c50bc2f785-ffed203bfe.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.2.21"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.3"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-dom", [\
+        ["npm:18.2.7", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.7-a20ba684a5-e02ea90828.zip/node_modules/@types/react-dom/",\
+          "packageDependencies": [\
+            ["@types/react-dom", "npm:18.2.7"],\
+            ["@types/react", "npm:18.2.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/scheduler", [\
+        ["npm:0.16.3", {\
+          "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.3-887bfc0086-2b0aec39c2.zip/node_modules/@types/scheduler/",\
+          "packageDependencies": [\
+            ["@types/scheduler", "npm:0.16.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -554,6 +609,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-key", "npm:3.1.1"],\
             ["shebang-command", "npm:2.0.0"],\
             ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["csstype", [\
+        ["npm:3.1.2", {\
+          "packageLocation": "./.yarn/cache/csstype-npm-3.1.2-cead7d99b2-e1a52e6c25.zip/node_modules/csstype/",\
+          "packageDependencies": [\
+            ["csstype", "npm:3.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2043,7 +2107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-dom-virtual-ae14737d95/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
             ["react-dom", "virtual:bb8a751f080187dfe6ed0e1efbbcfa8703ca57bdbec249b81dd84553bf3fdbdb2218c135e0075c417997cedaa6a781d80ddf0d774f8585e1925c1f86bf92b9c6#npm:18.2.0"],\
-            ["@types/react", null],\
+            ["@types/react", "npm:18.2.21"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
