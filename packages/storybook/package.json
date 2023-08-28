@@ -1,0 +1,9 @@
+{
+  "name": "@claeusdev-afro/storybook",
+  "packageManager": "yarn@3.6.3",
+  "private": true,
+  "dependencies": {
+    "@claeusdev-afro/foundation": "workspace:^",
+    "@claeusdev-afro/react": "workspace:^"
+  }
+}

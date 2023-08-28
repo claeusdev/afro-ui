@@ -1,0 +1,7 @@
+{
+  "name": "@claeusdev-afro/react",
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@claeusdev-afro/foundation": "workspace:^"
+  }
+}
