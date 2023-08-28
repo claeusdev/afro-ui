@@ -3,5 +3,11 @@
   "packageManager": "yarn@3.6.3",
   "dependencies": {
     "@claeusdev-afro/foundation": "workspace:^"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }

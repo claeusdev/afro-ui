@@ -1,4 +1,11 @@
 {
   "name": "@claeusdev-afro/foundation",
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "devDependencies": {
+    "style-dictionary": "^3.8.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build-tokens": "style-dictionary build --config sd.config.js"
+  }
 }
